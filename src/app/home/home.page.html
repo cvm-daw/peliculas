@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank122
+      Buscador de peliculas con la api omdbapi
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,6 +14,20 @@
   </ion-header>
 
   <div id="container">
-    <buscador></buscador>
+    <div id="container">
+
+      <form (ngSubmit)="busquedaApi()">
+        <ion-item>
+          <label>titulo:</label>&nbsp;
+          <input type="text" [(ngModel)]="titulo" name="title">
+        </ion-item>
+        <ion-item>
+          <button type="submit" block>Buscar pelicula</button>
+        </ion-item>
+    
+      </form>
+    
+    </div>  
+    <!-- <buscador></buscador> -->
   </div>
 </ion-content>

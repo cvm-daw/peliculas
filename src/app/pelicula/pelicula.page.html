@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Pelicula</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="pelicula">
+    <h1>{{pelicula.Title}}</h1>
+    <img src="{{pelicula.Poster}}" width="500px" height="600px">
+    <p>{{pelicula.Released}}</p>
+    <p>{{pelicula.Language}}</p>
+    <p>{{pelicula.Plot}}</p>
+    <p>{{pelicula.Awards}}</p>
+    <ion-button (click)="volver()">Default</ion-button>
+</ion-content>
