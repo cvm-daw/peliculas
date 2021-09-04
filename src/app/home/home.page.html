@@ -7,27 +7,19 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
   <div id="container">
-    <div id="container">
 
       <form (ngSubmit)="busquedaApi()">
-        <ion-item>
-          <label>titulo:</label>&nbsp;
+        <ion-item lines="none">
+          <label for="title">titulo:</label>&nbsp;
           <input type="text" [(ngModel)]="titulo" name="title">
         </ion-item>
-        <ion-item>
-          <button type="submit" block>Buscar pelicula</button>
+        <ion-item lines="none">
+          <ion-button type="submit" block>Buscar pelicula</ion-button>
         </ion-item>
     
       </form>
     
-    </div>  
-    <!-- <buscador></buscador> -->
   </div>
 </ion-content>

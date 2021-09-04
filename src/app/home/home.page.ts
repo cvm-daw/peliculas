@@ -13,8 +13,6 @@ export class HomePage {
   titulo:string;
 // Método para guardar el titulo de la pelicula del formulario y cambiar de página para mostrar la película
   busquedaApi(){
-    // console.log("noimames");
-    // console.log(this.titulo);
 
     let navigationExtras: NavigationExtras = {
       queryParams: {

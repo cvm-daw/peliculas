@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Peliculas } from '../interfaces/peliculas';
 import { BusquedaPeliculaService } from '../services/busqueda-pelicula.service';
 
 @Component({
@@ -30,6 +29,6 @@ pelicula: any;
 
  }
 volver(){
-  alert("chupapingas")
+  this.router.navigate(['home']);
 }
 }
