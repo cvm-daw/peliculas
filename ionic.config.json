@@ -3,5 +3,11 @@
   "integrations": {
     "capacitor": {}
   },
-  "type": "angular"
+  "type": "angular",
+  "proxies" :[
+    {
+      "path" : "/pelicula",
+      "proxyUrl" : "http://www.omdbapi.com/"
+    }
+  ]
 }
